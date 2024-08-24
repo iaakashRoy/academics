@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation Project, 21i190007</title>
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <!-- three.js -->
+    <script src="https://unpkg.com/three@0.126.0/build/three.js"></script>
+    <script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../shared/app.css" />
+    <script src="../shared/utils.js"></script>
+  </head>
+  <body>
+    <div id="enter-ar-info" class="mdc-card demo-card">
+      <h2>IEOR, IIT Bombay</h2>
+      <p>
+		Hello All, Aakash here. We thought of creating a simulation project which will be deployed in AR.
+        This is an experiment using augmented reality features with the WebXR Device API.
+        This is only for project purpose.
+      </p>
+
+      <!-- Starting an immersive WebXR session requires user interaction. Start the WebXR experience with a simple button. -->
+      <a id="enter-ar" class="mdc-button mdc-button--raised mdc-button--accent">
+        Enter to the world of simulation
+      </a>
+    </div>
+
+    <div id="unsupported-info" class="mdc-card demo-card">
+      <h2>Unsupported Browser</h2>
+      <p>
+        Your browser does not support AR features with WebXR. Learn more about these features from the
+        <a href="https://codelabs.developers.google.com/codelabs/ar-with-webxr">Building an augmented reality application with the WebXR Device API</a> Code Lab.
+      </p>
+    </div>
+    <script src="app.js"></script>
+    <div id="stabilization"></div>
+  </body>
+</html>
